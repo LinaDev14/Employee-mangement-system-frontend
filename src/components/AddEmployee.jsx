@@ -11,6 +11,29 @@ const AddEmployee = () => {
                         <label>First Name: </label>
                         <input type="text" className="input_field"/>
                     </div>
+                    <div className="label_name">
+                        <label>Last Name: </label>
+                        <input type="text" className="input_field"/>
+                    </div>
+                    <div className="label_name">
+                        <label>Email: </label>
+                        <input type="email" className="input_field"/>
+                    </div>
+                    <div className="label_name">
+                        <label>Number Phone: </label>
+                        <input type="number" className="input_field"/>
+                    </div>
+                    <div className="label_name">
+                        <label>Country: </label>
+                        <input type="text" className="input_field"/>
+                    </div>
+
+                    <div className="label_name">
+                        <button className="save_employee">Save</button>
+                        <button className="save_employee_clear">Clear</button>
+                    </div>
+
+                    
             </div>
       </div>
 )
