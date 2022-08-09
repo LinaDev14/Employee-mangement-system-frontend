@@ -8,8 +8,8 @@ const AddEmployee = () => {
             id: "",
             firstName:"",
             lastName: "",
-            emailId: "",
-            numberPhone: "",
+            email: "",
+            phoneNumber: "",
             country: ""
     });
 
@@ -67,17 +67,17 @@ const AddEmployee = () => {
                         <label>Email: </label>
                   <input
                       type="email" className="input_field" 
-                      name="emailId"
-                      value={employee.emailId}
+                      name="email"
+                      value={employee.email}
                       onChange={(e) => handleChange(e)}
                       
                   />
                     </div>
                     <div className="label_name">
                         <label>Number Phone: </label>
-                  <input type="number" className="input_field"
+                  <input type="text" className="input_field"
                       name="phoneNumber"
-                      value={employee.numberPhone}
+                      value={employee.phoneNumber}
                       onChange={(e) => handleChange(e)}
                   />
               </div>
