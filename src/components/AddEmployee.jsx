@@ -26,6 +26,7 @@ const AddEmployee = () => {
 
     const saveEmployee = (e) => {
         e.preventDefault();
+        
     }
 
 
