@@ -57,26 +57,26 @@ const EmployeeList = () => {
                               </thead>
                               {!loading && (
                                     <tbody className="bg-white">
-                                          {employees.map((employee) => {
+                                          {employees.map((employee) => (
                                                 <tr key={employee.id}>
                                                       <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">employee.firstName</div>
+                                                            <div className="text-sm text-gray-500">{employee.firstName}</div>
                                                       </td>
 
                                                       <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">employee.lastName</div>
+                                                            <div className="text-sm text-gray-500">{employee.lastName}</div>
                                                       </td>
 
                                                       <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">employee.email</div>
+                                                            <div className="text-sm text-gray-500">{employee.email}</div>
                                                       </td>
 
                                                       <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">employee.phoneNumber</div>
+                                                            <div className="text-sm text-gray-500">{employee.phoneNumber}</div>
                                                       </td>
 
                                                       <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">employee.country</div>
+                                                            <div className="text-sm text-gray-500">{employee.country}</div>
                                                       </td>
 
                                                       <td className="text-right px-6 py-4 whitespace-nowrap font-medium text-sm">
@@ -86,7 +86,7 @@ const EmployeeList = () => {
                                                       </td>
 
                                                 </tr>
-                                          })}
+                                          ))}
                               </tbody>
                                           
                               )}
