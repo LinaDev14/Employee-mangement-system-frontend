@@ -7,8 +7,9 @@ const AddEmployee = () => {
                     <div className="title_employee">
                           <h1>Add New Employee</h1>
                   </div>
-
-                    <div className="">
+                    <div className="label_name">
+                        <label>First Name: </label>
+                        <input type="text" className="input_field"/>
                     </div>
             </div>
       </div>

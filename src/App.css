@@ -41,3 +41,20 @@ font-family: 'Fira Sans', sans-serif;
 .employee{
   padding: 20px;
 }
+
+.label_name{
+align-items: center;
+justify-content: center;
+height: 18px;
+width: 100%;
+margin-top: 15px;
+display: inline-block;
+}
+
+.input_field{
+  height: 30px;
+  width: 30rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+}
