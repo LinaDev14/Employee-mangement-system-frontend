@@ -75,10 +75,11 @@ const AddEmployee = () => {
                     </div>
                     <div className="label_name">
                         <label>Number Phone: </label>
-                  <input type="number" className="input_field" />
-                  name="phoneNumber"
-                  value={employee.numberPhone}
-                  onChange={(e) => handleChange(e)}
+                  <input type="number" className="input_field"
+                      name="phoneNumber"
+                      value={employee.numberPhone}
+                      onChange={(e) => handleChange(e)}
+                  />
               </div>
               
                     <div className="label_name">
