@@ -39,6 +39,19 @@ const AddEmployee = () => {
         })
     }
 
+    const reset = (e) => {
+        e.preventDefault();
+        setEmployee({
+    
+            id: "",
+            firstName:"",
+            lastName: "",
+            email: "",
+            phoneNumber: "",
+            country: ""
+    });
+    }
+
 
   return (
       <div className="container_employee">
@@ -100,7 +113,9 @@ const AddEmployee = () => {
                         <button className="save_employee"
                         onClick={saveEmployee}
                         >Save</button>
-                        <button className="save_employee_clear">Clear</button>
+                        <button
+                        onClick={reset}
+                      className="save_employee_clear">Clear</button>
                     </div>
 
                     
