@@ -20,4 +20,24 @@ color: #2B4865;
 padding-left: 16px;
 font-family: 'Fira Sans', sans-serif;
 font-weight: bold;
+font-size: 20px;
+}
+
+.container_employee{
+display: flex;
+max-width: 42rem;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+border-bottom: 5px;
+margin: auto;
+margin-top: 15px;;
+}
+
+.title_employee{
+font-weight: normal;
+font-size: 12px;
+font-family: 'Fira Sans', sans-serif;
+}
+
+.employee{
+  padding: 20px;
 }
