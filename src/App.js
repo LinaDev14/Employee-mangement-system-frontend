@@ -1,10 +1,13 @@
-
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hola Lina!</h1>
+    <div className="bg-black">
+      <div className="h-16 flex item-center">
+        <p className="font-bold text-gray-900">
+          Employee Management System 
+        </p>
+      </div>
     </div>
   );
 }
