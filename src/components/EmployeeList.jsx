@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import EmployeeService from '../services/EmployeeService';
+import { Employee } from './Employee';
 
 const EmployeeList = () => {
 
@@ -32,7 +33,7 @@ const EmployeeList = () => {
       
 
       return (
-            <div className="container_list">
+            <div className="container mx-auto my-8">
                   <div className="container_button">
                         <button
                               onClick={() => navigate("/addEmployee")}
@@ -41,7 +42,7 @@ const EmployeeList = () => {
                         </button>
                   </div>
 
-                  <div className='border_bottom'>
+                  <div className='flex shadow border-b'>
 
                         <table className="min-w-full">
 
@@ -58,34 +59,7 @@ const EmployeeList = () => {
                               {!loading && (
                                     <tbody className="bg-white">
                                           {employees.map((employee) => (
-                                                <tr key={employee.id}>
-                                                      <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">{employee.firstName}</div>
-                                                      </td>
-
-                                                      <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">{employee.lastName}</div>
-                                                      </td>
-
-                                                      <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">{employee.email}</div>
-                                                      </td>
-
-                                                      <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">{employee.phoneNumber}</div>
-                                                      </td>
-
-                                                      <td className="text-left px-6 py-4 whitespace-nowrap">
-                                                            <div className="text-sm text-gray-500">{employee.country}</div>
-                                                      </td>
-
-                                                      <td className="text-right px-6 py-4 whitespace-nowrap font-medium text-sm">
-                                                            <a href="#" className="text-indigo-600 hover:text-indigo-800 px-4">Edit</a>
-                                                            <a href="#" className="text-red-600 hover:text-red-800">Delete</a>
-                                                
-                                                      </td>
-
-                                                </tr>
+                                               <Employee  employee={employee} key={employee.id}/>
                                           ))}
                               </tbody>
                                           
